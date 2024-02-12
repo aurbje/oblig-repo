@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinobilletter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Kinobilletter</h1>
+    <div class="form-container">
+        <label for="movie">Velg film:</label>
+        <select id="movie">
+            <option value=" - Oversikt over filmer - "> - Oversikt over filmer - </option>
+            <option value="Dune: Part Two">Dune: Part Two</option>
+            <option value="Mean Girls">Mean Girls</option>
+            <option value="Casablanca">Casablanca</option>
+            <option value="Shrek 7">Shrek 7</option>
+            <option value="Web Programming Rocks: The Documentary">Web Programming Rocks: The Documentary</option>
+        </select>
+
+        <label for="quantity">Antall billetter:</label>
+        <input type="number" id="quantity" min="1">
+
+        <label for="firstname">Fornavn:</label>
+        <input type="text" id="firstname">
+
+        <label for="lastname">Etternavn:</label>
+        <input type="text" id="lastname">
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="text" id="phone">
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email">
+    </div>
+
+    <button onclick="buyTicket()">Kjøp billett</button>
+    <button onclick="deleteAllTickets()">Slett alle billetter</button>
+
+    <div class="validation-message" id="validationMessage"></div>
+
+    <h2>Alle bestilte billetter</h2>
+    <ul class="ticket-list" id="ticketList"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
